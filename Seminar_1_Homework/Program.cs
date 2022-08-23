@@ -78,9 +78,10 @@
 
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
+int numbermin = 2, numbermax = number;
 
-while(number%2==0 & number>0)
+while(numbermin<=numbermax)
 {
-    Console.WriteLine(number);
-    number = number - 2;
+    Console.WriteLine(numbermin);
+    numbermin = numbermin + 2;
 }
